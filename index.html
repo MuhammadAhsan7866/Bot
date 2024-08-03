@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plugin.css">
+</head>
+<body>
+    <di0v class="sticky-menu-container">
+        <div class="inner-menu closed">
+            <div id="actionButtons">
+                <div class="message-wrapper">
+                    <span class="message">Wilt u graag reserveren?</span>
+                </div>
+                <button class="reservation-btn" id="buttonRight">Reserveer</button>
+                <button class="reservation-btn" id="buttonLeft">Cadeaubon</button>
+            </div>
+            <!-- main -->
+            <div id="leftForm" class="d-none">
+                <main id="leftFormMain">
+                    <section>
+                        <form>
+                            <div id="leftFormStep1">
+                                <h5>Waarvoor wilt u reserveren?</h5>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="type-0" class="user-form-label">Type:</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <select class="form-select user-form-select user-select space-break" id="type-0">
+                                            <option value="0" selected="selected" label="High Tea 11:30 uur (Brasserie Catharina)">High Tea 11:30 uur (Brasserie Catharina)</option>
+                                            <option value="1" label="High Tea 14:00 uur (Brasserie Catharina)">High Tea 14:00 uur (Brasserie Catharina)</option>
+                                            <option value="2" label="Lunch (Brasserie Catharina)">Lunch (Brasserie Catharina)</option>
+                                            <option value="3" label="Diner (Restaurant Hendrik)">Diner (Restaurant Hendrik)</option>
+                                            <option value="4" label="Lunch (Restaurant Hendrik)">Lunch (Restaurant Hendrik)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row m-0 user-form-row d-none" id="person-0">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-personSelector-0" class="user-form-label">Actual persons:</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <select class="form-select user-form-select user-select" id="resengo-personSelector-0">
+                                            <option value="">Kies enn optie</option>
+                                            <option value="0" selected="selected" label="1 persoon">1 persoon</option>
+                                            <option value="1" label="2 personen">2 personen</option>
+                                            <option value="2" label="3 personen">3 personen</option>
+                                            <option value="3" label="4 personen">4 personen</option>
+                                            <option value="4" label="5 personen">5 personen</option>
+                                            <option value="5" label="6 personen">6 personen</option>
+                                            <option value="6" label="7 personen">7 personen</option>
+                                            <option value="7" label="8 personen">8 personen</option>
+                                            <option value="8" label="9 personen">9 personen</option>
+                                            <option value="9" label="10 personen">10 personen</option>
+                                            <option value="10" label="11 personen">11 personen</option>
+                                            <option value="11" label="12 personen">12 personen</option>
+                                            <option value="12" label="13 personen">13 personen</option>
+                                            <option value="13" label="14 personen">14 personen</option>
+                                            <option value="14" label="15 personen">15 personen</option>
+                                            <option value="15" label="16 personen">16 personen</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="date-0" class="d-none">
+                                    <input type="date" id="birthday" name="birthday">
+                                </div>
+                                <div id="time-0" class="row g-3 mt-3 d-none">
+                                    <div class="col-auto">
+                                        <button type="button" class="btn user-form-btn time-btn">10:00</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn user-form-btn time-btn">11:00</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn user-form-btn time-btn">11:30</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn user-form-btn time-btn">12:00</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="leftFormStep2" class="d-none">
+                            <h5>
+                                Persoonlijke gegevens
+                                <a href="#" class="float-end font-15 text-black">Aanmelden </a>
+                            </h5>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-categorySelector-0" class="user-form-label">Voornam:*</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="Voornam*" />
+                                    </div>
+                                </div>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-categorySelector-0" class="user-form-label">Achternaam:*</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="Achternaam*" />
+                                    </div>
+                                </div>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-categorySelector-0" class="user-form-label">Email:*</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="Email*" />
+                                    </div>
+                                </div>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-categorySelector-0" class="user-form-label">Geboortedatum:*</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" class="form-control date-input d-inline user-form-input" id="day" placeholder="DD" maxlength="2" />-
+                                        <input type="text" class="form-control date-input d-inline user-form-input" id="month" placeholder="MM" maxlength="2" />-
+                                        <input type="text" class="form-control date-input d-inline user-form-input" id="year" placeholder="JJJJ" maxlength="4" />
+                                    </div>
+                                </div>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-categorySelector-0" class="user-form-label">GSM:*</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="GSM*" />
+                                        <input type="text" id="fname" name="fname" class="form-control user-form-input mt-2" placeholder="GSM*" />
+                                    </div>
+                                </div>
+                                <div class="row m-0 user-form-row">
+                                    <div class="col-12">
+                                        <a class="text-black" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Reserveer voor iemand anders
+                                            <span>
+                                                <i class="las la-angle-down"></i>
+                                            </span>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="row user-form-row">
+                                                <div class="col-12 col-md-4">
+                                                    <label for="resengo-categorySelector-0" class="user-form-label">Gastnaam:*</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="Gastnaam*" />
+                                                </div>
+                                            </div>
+                                            <div class="row user-form-row">
+                                                <div class="col-12 col-md-4">
+                                                    <label for="resengo-categorySelector-0" class="user-form-label">Gast e-mail</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="Gast e-mail" />
+                                                </div>
+                                            </div>
+                                            <div class="row user-form-row">
+                                                <div class="col-12 col-md-4">
+                                                    <label for="resengo-categorySelector-0" class="user-form-label">Gast telefoon:*</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="Gast telefoon*" />
+                                                    <input type="text" id="fname" name="fname" class="form-control user-form-input mt-2" placeholder="Gast telefoon*" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row user-form-row">
+                                            <div class="col-12">
+                                                <input type="checkbox" class="user-form-checkbox" value="nieuwsbrief" />
+                                                <label for="vcehck-1" class="user-form-label custom-label">
+                                                    Meld mij aan op de nieuwsbrief
+                                                </label>
+                                            </div>
+                    
+                                            <div class="col-12">
+                                                <input type="checkbox" class="user-form-checkbox" value="nieuwsbrief" />
+                                                <label for="vcehck-1" class="user-form-label custom-label">
+                                                    Ik aanvaard de privacyvoorwaarden
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="leftFormStep3" class="d-none">
+                                <h4>Extra's</h4>
+                                <div class="row user-form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="resengo-categorySelector-0" class="user-form-label">Arrangement:*</label>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <select class="form-select user-form-select user-select" id="resengo-categorySelector-0">
+                                            <option value="0" selected="selected" label="Kies inn optie">High Tea</option>
+                                            <option value="1" label="Kies inn optie">High Wine</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h4>Wilt u een cadeaubon gebruiken?</h4>
+                                <div class="row user-form-row">
+                                    <div class="col-12">
+                                        <input type="checkbox" class="user-form-checkbox" value="nieuwsbrief" />
+                                        <label for="cehck-1" class="user-form-label custom-label">
+                                            Ga verder zonder cadeaubon</label>
+                                    </div>
+                    
+                                    <div class="col-12">
+                                        <input type="checkbox" class="user-form-checkbox" value="nieuwsbrief" />
+                                        <label for="vcehck-1" class="user-form-label custom-label">
+                                            Nieuwe cadeaubon gebruiken</label>
+                    
+                                        <div class="row user-form-row">
+                                            <div class="col-12 col-md-4">
+                                                <label for="resengo-categorySelector-0" class="user-form-label">Cadeaubon:</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <select class="form-select user-form-select user-select" id="resengo-categorySelector-0">
+                                                    <option value="0" selected="selected" label="Cadeaubon Kasteel Maurick">Cadeaubon Kasteel Maurick</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row user-form-row">
+                                            <div class="col-12 col-md-4">
+                                                <label for="resengo-categorySelector-0" class="user-form-label">Number</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="" />
+                                            </div>
+                                        </div>
+                                        <div class="row user-form-row">
+                                            <div class="col-12 col-md-4">
+                                                <label for="resengo-categorySelector-0" class="user-form-label">Verificatiecode:*</label>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <input type="text" id="fname" name="fname" class="form-control user-form-input" placeholder="" />
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" class="btn user-form-btn">VOEG TOE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="leftFormStep4" class="d-none">
+                                <h4>Allergieën en voedselvoorkeur</h4>
+                                <p>Duid eventuele allergieën en voedselvoorkeuren aan voor uzelf en uw tafelgenoten.</p>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="pt-5 pb-5 text-center">
+                                            <i class="fa-solid fa-user fa-lg font-90"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>Khalid Mahmood</h6>
+                                        <a href="#" class="text-black">
+                                        Allergieën verbergen
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row user-form-row bg-white">
+                                    <h6>Voedselallergieën</h6>
+                                    <div class="col-12 col-md-6">
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox">
+                                        <label for="vehicle1" class="pt-2"> Melk (incl. lactose)</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Noten</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Vis</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Weekdieren/schelpdie</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Mosterd</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Lupine</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Andere</label>
+                                        <br>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox">
+                                        <label for="vehicle1" class="pt-2"> Melk (incl. lactose)</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Noten</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Vis</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Weekdieren/schelpdie</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Mosterd</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Lupine</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Andere</label>
+                                        <br>
+                                    </div>
+                                    <h6 class="pt-4">Voedselvoorkeuren</h6>
+                                    <div class="col-12 col-md-6">
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox">
+                                        <label for="vehicle1" class="pt-2"> Melk (incl. lactose)</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Noten</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Vis</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Weekdieren/schelpdie</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Mosterd</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Lupine</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Andere</label>
+                                        <br>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox">
+                                        <label for="vehicle1" class="pt-2"> Melk (incl. lactose)</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Noten</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Vis</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Weekdieren/schelpdie</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Mosterd</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Lupine</label>
+                                        <br>
+                                        <input type="checkbox" id="menu" name="Melk" value="Melk (incl. lactose)" class="user-form-checkbox pt-2">
+                                        <label for="vehicle1" class="pt-2">Andere</label>
+                                        <br>
+                                    </div>
+                    
+                                    <label for="text" class="pt-5">Opmerkingen</label>
+                                    <br>
+                                    <textarea id="text" name="text" rows="2" cols="30"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <footer id="LeftFormFooter" class="row m-0 footer d-none">
+                        <div class="col-12 col-sm-9 col-md-9">
+                            <button id="rightFormPreviousButton" class="previous" data-current-step="2">
+                                <svg class="icon prev svg-dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32"> <path d="M26.291 27.462L14.805 15.996 26.291 4.539 21.746 0 5.709 15.996 21.746 32l4.545-4.538z"></path> </svg>  
+                                <span>Previous</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-3 col-md-3 p-0">
+                            <button id="rightFormNextButton" class="next" data-current-step="2">    
+                                <span>Next</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 24 24"><path d="M5.499,24c-0.2,0-0.389-0.078-0.53-0.22c-0.292-0.292-0.292-0.768,0-1.061L15.689,12L4.969,1.28 c-0.142-0.141-0.22-0.33-0.22-0.53s0.078-0.389,0.22-0.53C5.11,0.078,5.299,0,5.499,0s0.389,0.078,0.53,0.22l10.72,10.72 c0.584,0.584,0.585,1.535,0.001,2.119L6.029,23.78C5.888,23.922,5.699,24,5.499,24z"></path></svg>
+                            </button>
+                        </div>
+                    </footer>
+                </main>
+            </div>
+            <div id="rightForm" class="d-none">
+                <main id="rightFormMain">
+                    <div id="rightFormStep1">
+                        <section class="form-section p-25">
+                            <p class="caption">
+                                Indien u een cadeaubon met een ander bedrag wenst kunt u mailen naar info@kasteel-maurick.nl
+                            </p>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 50
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 50,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon high tea 1 persoon
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 34,50
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 50
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 50,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 75
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 75,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 100
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 100,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 125
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 125,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 150
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 150,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 175
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 175,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 200
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 200,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 225
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 225,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon € 250
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 250,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop-asset">
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        Cadeaubon Diner arrangement € 315 Excl. Toeristenbelasting
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-10">
+                                    <span class="shop-asset-title">
+                                        € 315,00
+                                    </span>
+                                    <span>
+                                        <a class="add-order-item" href="javascript:void(0);">
+                                            <img src="add.png" class="add-to-card" title="Toevoegen aan winkelmandje">
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="small-text">
+                                VU: Kasteel Maurick - Maurick 3 - NL-5261 NA Vught
+                            </p>
+                        </section>
+                        <footer id="rightFormFooter" class="row m-0 footer d-none">
+                            <div class="col-12 col-sm-9 col-md-9">
+                                <div class="shopping-cart-detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 24 24"><path d="M0.75,17.939c-0.2,0-0.389-0.078-0.53-0.22c-0.292-0.292-0.292-0.768,0-1.061L10.94,5.94 C11.223,5.656,11.599,5.5,11.999,5.5c0.401,0,0.777,0.156,1.06,0.438l10.721,10.72c0.292,0.292,0.292,0.768,0,1.061 c-0.142,0.142-0.33,0.22-0.53,0.22s-0.389-0.078-0.53-0.22L12,7L1.28,17.719C1.139,17.861,0.95,17.939,0.75,17.939z"></path></svg>
+                                    <span class="shopping-cart-detail-title">
+                                        Winkelmandje
+                                    </span>
+                                    <span class="shopping-cart-detail-value">
+                                        €
+                                    </span>
+                                    <span class="cart-value">1.130,00</span>
+                                    <div class="shopping-cart-detail-count">
+                                        <span class="cart-count">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 p-0">
+                                <button id="rightFormCheckoutButton" class="next">    
+                                    <span>Checkout</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 24 24"><path d="M5.499,24c-0.2,0-0.389-0.078-0.53-0.22c-0.292-0.292-0.292-0.768,0-1.061L15.689,12L4.969,1.28 c-0.142-0.141-0.22-0.33-0.22-0.53s0.078-0.389,0.22-0.53C5.11,0.078,5.299,0,5.499,0s0.389,0.078,0.53,0.22l10.72,10.72 c0.584,0.584,0.585,1.535,0.001,2.119L6.029,23.78C5.888,23.922,5.699,24,5.499,24z"></path></svg>
+                                </button>
+                            </div>
+                        </footer>
+                    </div>
+                    <section class="form-section">
+                        <div id="rightFormStep2" class="d-none">
+                            <section class="p-25 pb-0">
+                                <div class="table-responsive">
+                                    <table id="checkout-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Omschrijving</th>
+                                                <th>#</th>
+                                                <th>Tot. iBTW</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cadeaubon Diner arrangement € 315 Excl. Toeristenbelasting</td>
+                                                <td>2</td>
+                                                <td>€ 630,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cadeaubon € 250</td>
+                                                <td>2</td>
+                                                <td>€ 500,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Opsturen: cadeaubon incl. luxe metallic envelop</td>
+                                                <td>1</td>
+                                                <td>€ 4,00</td>
+                                            </tr>
+                                            <tr class="border-top">
+                                                <td><strong>Totaal cadeaubonnen</strong></td>
+                                                <td></td>
+                                                <td><strong>€ 1.130,00</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row m-0 mt-3 mb-3">
+                                    <div class="col-12 col-sm-9 col-md-9">
+                                        <input type="radio" id="radio-1" class="user-order" name="user-order" value="0">
+                                        <label for="radio-1">Per e-mail in pdf</label>
+                                    </div>
+                                    <div class="col-12 col-sm-3 col-md-3">
+                                        <span>€ 0,00</span>
+                                    </div>
+                                </div>
+                                <div class="row m-0 mt-3 mb-3">
+                                    <div class="col-12 col-sm-9 col-md-9">
+                                        <input type="radio" id="radio-2" class="user-order" name="user-order" value="1">
+                                        <label for="radio-2">Opsturen: cadeaubon incl. luxe metallic envelop</label>
+                                    </div>
+                                    <div class="col-12 col-sm-3 col-md-3">
+                                        <span>€ 4,00</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="rightFormStep3" class="d-none">
+                            <section class="px-25">
+                                <h5> Uw contactgegevens </h5>
+                                <div class="mb-3">
+                                    <label for="firstName" class="user-form-label">FirstName:</label>
+                                    <input type="text" id="firstName" class="user-form-input" value="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="user-form-label">LastName:</label>
+                                    <input type="text" id="lastName" class="user-form-input" value="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="user-form-label">GSM:</label>
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-3 pr-md-0">
+                                            <select class="form-select  user-form-select">
+                                                <option value="+32-0">BE +32</option>
+                                                <option value="+49-0">DE +49</option>
+                                                <option value="+33-0">FR +33</option>
+                                                <option value="+44-0">GB +44</option>
+                                                <option value="+353-0">IE +353</option>
+                                                <option value="+352-0">LU +352</option>
+                                                <option value="+31-0">NL +31</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <input type="text" id="phone" class="user-form-input" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="user-form-label">Email:</label>
+                                    <input type="text" id="email" class="user-form-input" value="">
+                                </div>
+                            </section>
+                        </div>
+                        <div id="rightFormStep4" class="d-none">
+                            <section class="px-25">
+                                <h5> Leveradres </h5>
+                                <div class="row m-0 mt-3 mb-3">
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <input type="radio" id="radio-3" class="user-order-2" name="user-order-info" value="0" checked>
+                                        <label for="radio-3">Zelfde als uw contactgegevens</label>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <input type="radio" id="radio-4" class="user-order-2" name="user-order-info" value="1">
+                                        <label for="radio-4">Ander adres</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="firstName" class="user-form-label">FirstName:</label>
+                                    <input type="text" id="firstName" class="user-order-info user-form-input" value="" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="user-form-label">LastName:</label>
+                                    <input type="text" id="lastName" class="user-order-info user-form-input" value="" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Postcode" class="user-form-label">Postcode:</label>
+                                    <input type="text" id="Postcode" class="user-form-input" value="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Gemeente" class="user-form-label">Gemeente:</label>
+                                    <input type="text" id="Gemeente" class="user-form-input" value="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="land" class="user-form-label">Land:</label>
+                                    <select id="land" class="form-select user-form-select">
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AX">Åland Islands</option>
+                                        <option value="AL">Albanië</option>
+                                        <option value="DZ">Algerije</option>
+                                        <option value="AS">Amerikaans Samoa</option>
+                                        <option value="VI">Amerikaanse Maagdeneilanden</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AQ">Antarctica</option>
+                                        <option value="AG">Antigua en Barbuda</option>
+                                        <option value="AR">Argentinië</option>
+                                        <option value="AM">Armenië</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australië</option>
+                                        <option value="AZ">Azerbeidzjan</option>
+                                        <option value="BS">Bahama's</option>
+                                        <option value="BH">Bahrein</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BE">België</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BA">Bosnië-Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BV">Bouvet</option>
+                                        <option value="BR">Brazilië</option>
+                                        <option value="IO">Brits Indische Oceaan Territorium</option>
+                                        <option value="VG">Britse Maagdeneilanden</option>
+                                        <option value="BN">Brunei</option>
+                                        <option value="BG">Bulgarije</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodja</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="KY">Caymaneilanden</option>
+                                        <option value="CF">Centraal-Afrikaanse Republiek</option>
+                                        <option value="CL">Chili</option>
+                                        <option value="CN">China</option>
+                                        <option value="CX">Christmaseiland</option>
+                                        <option value="CC">Cocoseilanden</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoren</option>
+                                        <option value="CK">Cookeilanden</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CW">Curaçao</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CD">Democratische Republiek Congo</option>
+                                        <option value="DK">Denemarken</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominicaanse Republiek</option>
+                                        <option value="DE">Duitsland</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypte</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="GQ">Equatoriaal Guinea</option>
+                                        <option value="ER">Eritrea</option>
+                                        <option value="EE">Estland</option>
+                                        <option value="ET">Ethiopië</option>
+                                        <option value="FO">Faeröer</option>
+                                        <option value="FK">Falklandeilanden</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="PH">Filippijnen</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">Frankrijk</option>
+                                        <option value="TF">Franse Zuidelijke en Antarctische gebieden</option>
+                                        <option value="GF">Frans-Guyana</option>
+                                        <option value="PF">Frans-Polynesië</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgië</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GI">Gibraltar</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GR">Griekenland</option>
+                                        <option value="GL">Groenland</option>
+                                        <option value="LU">Groothertogdom Luxemburg</option>
+                                        <option value="GP">Guadeloupe</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GN">Guinee</option>
+                                        <option value="GW">Guinee-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HM">Heard Eiland en McDonald Eilanden</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HU">Hongarije</option>
+                                        <option value="HK">Hongkong</option>
+                                        <option value="IE">Ierland</option>
+                                        <option value="IS">IJsland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesië</option>
+                                        <option value="IQ">Irak</option>
+                                        <option value="IR">Iran</option>
+                                        <option value="IM">Isle of Man</option>
+                                        <option value="IL">Israël</option>
+                                        <option value="IT">Italië</option>
+                                        <option value="CI">Ivoorkust</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="YE">Jemen</option>
+                                        <option value="JO">Jordanië</option>
+                                        <option value="CV">Kaapverdië</option>
+                                        <option value="CM">Kameroen</option>
+                                        <option value="KZ">Kazachstan</option>
+                                        <option value="KE">Kenia</option>
+                                        <option value="KG">Kirgizië</option>
+                                        <option value="KI">Kiribati</option>
+                                        <option value="KW">Koeweit</option>
+                                        <option value="HR">Kroatië</option>
+                                        <option value="LA">Laos</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LV">Letland</option>
+                                        <option value="LB">Libanon</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libië</option>
+                                        <option value="LI">Liechtenstein</option>
+                                        <option value="LT">Litouwen</option>
+                                        <option value="MO">Macao</option>
+                                        <option value="MK">Macedonië</option>
+                                        <option value="MG">Madagaskar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MV">Maldiven</option>
+                                        <option value="MY">Maleisië</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MA">Marokko</option>
+                                        <option value="MH">Marshalleilanden</option>
+                                        <option value="MQ">Martinique</option>
+                                        <option value="MR">Mauritanië</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="YT">Mayotte</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="FM">Micronesië</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolië</option>
+                                        <option value="MS">Montserrat</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="MM">Myanmar</option>
+                                        <option value="NA">Namibië</option>
+                                        <option value="NR">Nauru</option>
+                                        <option value="NL" selected="">Nederland</option>
+                                        <option value="AN">Nederlandse Antillen</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NC">Nieuw-Caledonië</option>
+                                        <option value="NZ">Nieuw-Zeeland</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NU">Niue</option>
+                                        <option value="MP">Noordelijke Marianen</option>
+                                        <option value="KP">Noord-Korea</option>
+                                        <option value="NO">Noorwegen</option>
+                                        <option value="NF">Norfolkeiland</option>
+                                        <option value="UG">Oeganda</option>
+                                        <option value="UA">Oekraïne</option>
+                                        <option value="UZ">Oezbekistan</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="AT">Oostenrijk</option>
+                                        <option value="TL">Oost-Timor</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PW">Palau</option>
+                                        <option value="PS">Palestina</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papoea-Nieuw-Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PN">Pitcairneilanden</option>
+                                        <option value="PL">Polen</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="CG">Republiek Congo</option>
+                                        <option value="MD">Republiek Moldavië</option>
+                                        <option value="RE">Réunion</option>
+                                        <option value="RO">Roemenië</option>
+                                        <option value="RU">Rusland</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="KN">Saint Kitts en Nevis</option>
+                                        <option value="LC">Saint Lucia</option>
+                                        <option value="VC">Saint Vincent en de Grenadines</option>
+                                        <option value="PM">Saint-Pierre en Miquelon</option>
+                                        <option value="SB">Salomonseilanden</option>
+                                        <option value="WS">Samoa</option>
+                                        <option value="SM">San Marino</option>
+                                        <option value="ST">Sao Tomé en Principe</option>
+                                        <option value="SA">Saoedi-Arabië</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Servië</option>
+                                        <option value="SC">Seychellen</option>
+                                        <option value="SL">Sierra Leone</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SH">Sint-Helena</option>
+                                        <option value="SI">Slovenië</option>
+                                        <option value="SK">Slowakije</option>
+                                        <option value="SO">Somalië</option>
+                                        <option value="ES">Spanje</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SJ">Svalbard en Jan Mayen</option>
+                                        <option value="SZ">Swaziland</option>
+                                        <option value="SY">Syrië</option>
+                                        <option value="TJ">Tadzjikistan</option>
+                                        <option value="TW">Taiwan</option>
+                                        <option value="TZ">Tanzania</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TK">Tokelau-eilanden</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TT">Trinidad en Tobago</option>
+                                        <option value="TD">Tsjaad</option>
+                                        <option value="CZ">Tsjechië</option>
+                                        <option value="TN">Tunesië</option>
+                                        <option value="TR">Turkije</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="TC">Turks- en Caicoseilanden</option>
+                                        <option value="TV">Tuvalu</option>
+                                        <option value="UM">United States Minor Outlying Eilanden</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="VU">Vanuatu</option>
+                                        <option value="VA">Vaticaanstad</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="GB">Verenigd Koninkrijk</option>
+                                        <option value="AE">Verenigde Arabische Emiraten</option>
+                                        <option value="US">Verenigde Staten</option>
+                                        <option value="VN">Vietnam</option>
+                                        <option value="WF">Wallis en Futuna</option>
+                                        <option value="EH">Westelijke Sahara</option>
+                                        <option value="BY">Wit-Rusland</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                        <option value="ZA">Zuid-Afrika</option>
+                                        <option value="GS">Zuid-Georgië en de Zuidelijke Sandwicheilanden</option>
+                                        <option value="KR">Zuid-Korea</option>
+                                        <option value="SE">Zweden</option>
+                                        <option value="CH">Zwitserland</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="user-form-label">Email:</label>
+                                    <input type="text" id="email" class="user-form-input" value="">
+                                </div>
+                            </section>
+                        </div>
+                        <div id="rightFormStep5" class="d-none">
+                            <section class="px-25">
+                                <hr>
+                                <div class="terms-container">
+                                    <input type="checkbox" id="terms-checkbox" class="user-form-checkbox">
+                                    <label for="terms-checkbox">I accept the terms and conditions</label>
+                                </div>
+                                <input type="submit" class="btn user-form-btn btn-block mt-5" name="submit" value="Submit">
+                            </section>               
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <div class="outer-button">
+            <div class="icon-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve" class="close-icon">
+                    <path id="XMLID_732_" d="M70.7,64.3c1.8,1.8,1.8,4.6,0,6.4c-0.9,0.9-2,1.3-3.2,1.3c-1.2,0-2.3-0.4-3.2-1.3L46,52.4L27.7,70.7
+                    c-0.9,0.9-2,1.3-3.2,1.3s-2.3-0.4-3.2-1.3c-1.8-1.8-1.8-4.6,0-6.4L39.6,46L21.3,27.7c-1.8-1.8-1.8-4.6,0-6.4c1.8-1.8,4.6-1.8,6.4,0
+                    L46,39.6l18.3-18.3c1.8-1.8,4.6-1.8,6.4,0c1.8,1.8,1.8,4.6,0,6.4L52.4,46L70.7,64.3z"/>
+                </svg>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve" class="arrow-icon">
+                    <path id="XMLID_507_" d="M49.9,88c-0.2,0-0.4,0-0.6-0.1c-1.8-0.3-3.2-1.7-3.3-3.5l-3.5-34.8L7.6,46.1c-1.8-0.2-3.3-1.6-3.5-3.3
+                    c-0.3-1.8,0.7-3.5,2.3-4.3l76-34.1c1.5-0.7,3.3-0.4,4.5,0.8c1.2,1.2,1.5,3,0.8,4.5l-34.1,76C52.9,87.1,51.4,88,49.9,88z M23.3,39.7
+                    L46.4,42c1.9,0.2,3.4,1.7,3.6,3.6l2.4,23.1L76,16L23.3,39.7z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
